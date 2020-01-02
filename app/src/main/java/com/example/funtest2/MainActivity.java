@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.example.funtest2.activity.DeviceActivity;
 import com.example.funtest2.activity.UserActivity;
+import com.example.funtest2.activity.VedioActivity;
 import com.example.funtest2.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
@@ -71,7 +72,8 @@ public class MainActivity extends BaseActivity {
         video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this, VedioActivity.class);
+                startActivity(intent);
             }
         });
     }

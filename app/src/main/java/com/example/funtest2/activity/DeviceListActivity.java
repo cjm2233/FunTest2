@@ -56,6 +56,7 @@ public class DeviceListActivity extends BaseActivity {
             @Override
             public void onItemClicked(View view, int position) {
                 Intent intent = new Intent(DeviceListActivity.this,MediaActivity.class);
+                intent.putExtra("sn",devList.get(position));
                 startActivity(intent);
             }
 

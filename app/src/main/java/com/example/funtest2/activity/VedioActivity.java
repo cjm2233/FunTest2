@@ -1,5 +1,6 @@
 package com.example.funtest2.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -25,7 +26,7 @@ public class VedioActivity extends BaseActivity {
 
     @Override
     public void initView() {
-        media = findViewById(R.id.tv_media_vedio);
+        media = findViewById(R.id.tv_record_vedio);
     }
 
     @Override
@@ -38,7 +39,8 @@ public class VedioActivity extends BaseActivity {
         media.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(VedioActivity.this, RecordActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -18,6 +18,9 @@ public class DeviceActivity extends BaseActivity {
     private TextView addDevice;
     private TextView deleteDevice;
     private TextView addByWIFI;
+    private TextView deviceLogin;
+    private TextView deviceLanLogin;
+    private TextView rename;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,9 @@ public class DeviceActivity extends BaseActivity {
         addDevice = findViewById(R.id.tv_addDevice_device);
         deleteDevice = findViewById(R.id.tv_deleteDevice_device);
         addByWIFI = findViewById(R.id.tv_addByWIFI_device);
+        deviceLogin = findViewById(R.id.tv_devicelogin_device);
+        deviceLanLogin = findViewById(R.id.tv_devicelanList_device);
+        rename = findViewById(R.id.tv_rename_device);
     }
 
     @Override
@@ -67,6 +73,27 @@ public class DeviceActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DeviceActivity.this, AddByWifiActivity.class);
+                startActivity(intent);
+            }
+        });
+        deviceLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DeviceActivity.this, DeviceLoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        deviceLanLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DeviceActivity.this, DeviceLanListActivity.class);
+                startActivity(intent);
+            }
+        });
+        rename.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DeviceActivity.this, DeviceReNameActivity.class);
                 startActivity(intent);
             }
         });

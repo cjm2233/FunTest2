@@ -4,4 +4,121 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/lin_media_media"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="继续播放" />
+
+    <Button
+        android:id="@+id/btn_pause_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停播放" />
+
+    <Button
+        android:id="@+id/btn_stop_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭预览" />
+
+    <Button
+        android:id="@+id/btn_capture_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="截图" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_config_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="获取配置" />
+
+        <Button
+            android:id="@+id/btn_setconfig_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置配置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_openvoice_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="打开声音" />
+
+        <Button
+            android:id="@+id/btn_closevoice_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关闭声音" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_startrecord_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始录像" />
+
+        <Button
+            android:id="@+id/btn_stoprecord_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="停止录像" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_high_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高清" />
+
+        <Button
+            android:id="@+id/btn_low_media"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="标清" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_record_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="录像播放" />
+
 </LinearLayout>

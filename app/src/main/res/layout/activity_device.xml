@@ -3,52 +3,137 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <TextView
-            android:text="设备列表"
             android:id="@+id/tv_deviceList_device"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:text="设备列表（用户远程）"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <TextView
-            android:text="添加设备（序列号）"
+            android:id="@+id/tv_devicelanList_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="设备列表（局域网）"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
             android:id="@+id/tv_addDevice_device"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:text="添加设备（序列号）"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <TextView
-            android:text="删除设备（序列号）"
             android:id="@+id/tv_deleteDevice_device"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:text="删除设备（序列号）"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <TextView
-            android:text="WIFI快速配置"
+            android:id="@+id/tv_devicelogin_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="设备登录"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
             android:id="@+id/tv_addByWIFI_device"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:text="WIFI快速配置"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_rename_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="设备重命名"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
 </LinearLayout>

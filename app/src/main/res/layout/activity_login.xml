@@ -22,7 +22,7 @@
             android:id="@+id/ed_user_login"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:hint="手机号" />
+            android:hint="手机号或用户名" />
     </LinearLayout>
 
     <LinearLayout

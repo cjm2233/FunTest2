@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/ed_sn_devicelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="序列号" />
+
+    <EditText
+        android:id="@+id/ed_usernanme_devicelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="登录用户名" />
+
+    <EditText
+        android:id="@+id/ed_password_devicelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="登录密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login_devicelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="登录设备" />
+
+</LinearLayout>

@@ -50,7 +50,8 @@
         <meta-data
             android:name="APP_MOVECARD"
             android:value="2"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -68,6 +69,14 @@
         <activity android:name=".activity.ChangePasswordActivity"/>
         <activity android:name=".activity.VedioActivity"/>
         <activity android:name=".activity.MediaActivity"/>
+        <activity android:name=".activity.RecordActivity"/>
+        <activity android:name=".activity.ForgetPasswordActivity"/>
+        <activity android:name=".activity.RegisterByEmailActivity"/>
+        <activity android:name=".activity.UserInfoActivity"/>
+        <activity android:name=".activity.DeviceLoginActivity"/>
+        <activity android:name=".activity.DeviceLanListActivity"/>
+        <activity android:name=".activity.DeviceAPListActivity"/>
+        <activity android:name=".activity.DeviceReNameActivity"/>
     </application>
 
 </manifest>

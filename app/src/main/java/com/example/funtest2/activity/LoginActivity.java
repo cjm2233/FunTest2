@@ -1,6 +1,7 @@
 package com.example.funtest2.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Message;
@@ -9,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.funtest2.MainActivity;
 import com.example.funtest2.R;
 import com.example.funtest2.application.MyApplication;
 import com.example.funtest2.base.BaseActivity;
@@ -66,28 +68,46 @@ public class LoginActivity extends BaseActivity {
         });
     }
     private void loginByPhone(){
-        userStr = user.getText().toString();
-        passwordStr = password.getText().toString();
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("username",userStr);
-        editor.putString("password",passwordStr);
-        editor.commit();
-        XMAccountManager.getInstance().login(userStr, passwordStr, LOGIN_BY_ACCOUNT, new BaseAccountManager.OnAccountManagerListener() {
-            @Override
-            public void onSuccess(int i) {
-                Toast.makeText(MyApplication.getContext(),"登录成功",Toast.LENGTH_SHORT).show();
-                finish();
-            }
+        if (XMAccountManager.getInstance().hasLogin()){
+            Toast.makeText(MyApplication.getContext(),"您已登录",Toast.LENGTH_SHORT).show();
+        }else {
+            userStr = user.getText().toString();
+            passwordStr = password.getText().toString();
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("username",userStr);
+            editor.putString("password",passwordStr);
+            editor.commit();
+            XMAccountManager.getInstance().login(userStr, passwordStr, LOGIN_BY_ACCOUNT, new BaseAccountManager.OnAccountManagerListener() {
+                @Override
+                public void onSuccess(int i) {
+                    Toast.makeText(MyApplication.getContext(),"登录成功",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
 
-            @Override
-            public void onFailed(int i, int i1) {
-                Toast.makeText(MyApplication.getContext(),"登录失败"+i1,Toast.LENGTH_SHORT).show();
-            }
+                @Override
+                public void onFailed(int i, int i1) {
+                    switch (i1){
+                        case -604000 :{
+                            Toast.makeText(MyApplication.getContext(),"用户名或密码错误",Toast.LENGTH_SHORT).show();
+                            break;
+                        }
+                        case -604010 :{
+                            Toast.makeText(MyApplication.getContext(),"验证码错误",Toast.LENGTH_SHORT).show();
+                            break;
+                        }
+                        default:{
+                            Toast.makeText(MyApplication.getContext(),"登录失败",Toast.LENGTH_SHORT).show();
+                            break;
+                        }
+                    }
+                }
 
-            @Override
-            public void onFunSDKResult(Message message, MsgContent msgContent) {
+                @Override
+                public void onFunSDKResult(Message message, MsgContent msgContent) {
 
-            }
-        });
+                }
+            });
+        }
     }
 }

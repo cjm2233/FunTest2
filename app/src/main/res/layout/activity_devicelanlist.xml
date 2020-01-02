@@ -3,18 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp">
-        <TextView
-            android:text="播放录像"
-            android:id="@+id/tv_record_vedio"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_device_devicelanlist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:padding="10dp"
-            android:textSize="25sp" />
-    </LinearLayout>
-
-
+            android:scrollbars="none"
+            android:overScrollMode="never"/>
+    </FrameLayout>
 </LinearLayout>

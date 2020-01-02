@@ -3,41 +3,138 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <TextView
-            android:text="用户注册"
             android:id="@+id/tv_register_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:text="用户注册（手机号）"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <TextView
-            android:text="用户登录"
+            android:id="@+id/tv_registerbyemail_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="用户注册（邮箱）"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
             android:id="@+id/tv_login_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:text="用户登录"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
+
         <TextView
-            android:text="修改密码"
             android:id="@+id/tv_changePassword_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:padding="10dp"
+            android:text="修改密码"
             android:textSize="25sp" />
     </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_forgetPassword_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="忘记密码"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_info_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="用户信息"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_logout_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="退出登录"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:background="#d1d1d1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
 
 </LinearLayout>
